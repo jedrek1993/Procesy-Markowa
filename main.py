@@ -117,11 +117,11 @@ def main():
         ploted[4].append(utility[0][0])
         ploted[5].append(utility[1][0])
         ploted[6].append(utility[0][3])
-    print "\n\tPolityka optymalna:"
+    print("\n\tPolityka optymalna:")
     print_board(policy)
-    print "\n\n\tUżyteczności stanów:"
+    print("\n\n\tUżyteczności stanów:")
     print_board(utility)
-    print "\n"
+    print("\n")
 
     for pl in ploted:
         plt.plot(pl)
@@ -154,7 +154,7 @@ def print_board(board):
                 p += "{:<+d}".format(elem)
             else:
                 p += "{:6} ".format(elem)
-        print p
+        print(p)
 
 
 def is_terminal_state(x, y):
